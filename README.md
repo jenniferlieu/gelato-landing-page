@@ -6,6 +6,8 @@ Originally created in Sep 2021 on [codepen](https://codepen.io/jenlieu/full/XWgg
 
 Note: I don't want to be sued for copyright infringement, so I used royalty free images. Unfortunately, there are rarely images of specific gelato flavors for free, so I had to get creative on which images to use. Check out the images folder, and you'll see what I mean.
 
+![Full-page length screenshot of the gelato landing page](../assets/screenshot.png)
+
 ## Credits
 - Hero banner photo by <a href="https://unsplash.com/es/@sadswim?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">ian dooley</a> on <a href="https://unsplash.com/photos/TLD6iCOlyb0t">Unsplash</a>
 - Stracciatella Photo by <a href="https://unsplash.com/@alexjones?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alex Jones</a> on <a href="https://unsplash.com/photos/VPnvh8vj7lc">Unsplash</a>
