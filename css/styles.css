@@ -1,0 +1,450 @@
+/*---- IMPORT GOOGLE FONTS -----*/
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Allison */
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+
+
+/*---------------------- HTML ---*/
+* {
+  --primary-color: #ed6f63;
+  --secondary-color: #2D2926;
+  --primary-color-light: pink;
+  --secondary-color-light: #D0D0D0;
+
+  --tablet-max-width: 768px;
+  --phone-max-width: 480px;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-color: var(--secondary-color);
+  font-weight: 300;
+  font-size: 1em;
+}
+
+p {
+  margin: 0;
+}
+
+
+/*----------------------------------------- GENERAL CLASSES ---*/
+.subtitle {
+  color: var(--secondary-color);
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+  .subtitle {
+    font-size: 2em;
+  }
+}
+
+.bold400 {
+  font-weight: 400;
+}
+
+
+/*----------------------------------------------------- HEADER --*/
+header {
+  height: 100vh;
+}
+
+/* flip ONLY the background image upside */
+header::before {
+  /* required declarations to see background */
+  content: "";
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+
+  /* fallback background 2 */
+  background: var(--primary-color);
+
+  /* fallback background 1 */
+  background: url('../images/bg-ice-cream.png'), var(--primary-color);
+
+  /* desired background to display */
+  background: url('../images/bg-ice-cream.png'), radial-gradient(ellipse at 50% 65%, var(--primary-color-light), var(--primary-color), transparent), var(--primary-color);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 71%;
+  background-attachment: fixed;
+
+  /* flip background upside down */
+  transform: scaleY(-1);
+}
+
+@media screen and (max-width: 768px) {
+  header::before {
+    background-size: 100%;
+  }
+}
+
+
+
+@media screen and (max-width: 480px) {
+  header::before {
+    background-size: 220%;
+  }
+}
+
+/*----- HEADER: NAVBAR -------*/
+#nav-bar {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: var(--primary-color);
+  box-sizing: border-box;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#nav-bar-title {
+  font-family: 'Allison', cursive;
+  font-size: 2em;
+}
+
+.logo {
+  width: 18px;
+}
+
+#nav-bar-menu {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  font-weight: 300;
+  font-size: 1.2em;
+  box-sizing: border-box;
+  column-gap: 2%;
+  flex-grow: 3;
+  text-align: right;
+}
+
+.nav-link {
+  font-weight: 500;
+}
+
+/*------------------- navbar links --*/
+#nav-bar a,
+#nav-bar a:active {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+#nav-bar a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  .header-title {
+    display: none;
+  }
+
+  .nav-link {
+    font-size: 0.9em;
+  }
+}
+
+/*----- HEADER: WELCOME MESSAGE -------*/
+#welcome-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  color: var(--secondary-color);
+}
+
+#tagline {
+  margin: 0;
+  font-size: 7em;
+}
+
+#scroll-down,
+#scroll-down a,
+#scroll-down a:active {
+  color: var(--secondary-color);
+  font-size: 2em;
+  padding: 1% 0;
+}
+
+#scroll-down a:visited {
+  color: var(--secondary-color);
+}
+
+#scroll-down a:hover {
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  #tagline {
+    font-size: 4em;
+  }
+
+  #scroll-down,
+  #scroll-down a,
+  #scroll-down a:active {
+    font-size: 1.5em;
+  }
+}
+
+
+/*----------------------------------------------- MAIN: SECTION --*/
+section {
+  height: auto;
+  padding-top: 10%;
+}
+
+.section-heading {
+  padding: 0 10%;
+}
+
+.section-title {
+  font-size: 3em;
+  margin: 0;
+  margin-bottom: 1%;
+  padding-top: 5%;
+}
+
+.section-content {
+  font-size: 1.5em;
+  padding: 0 10%;
+  padding-top: 4%;
+}
+
+@media screen and (max-width: 480px) {
+  section {
+    padding-bottom: 40%;
+  }
+
+  .section-title {
+    font-size: 2.6em;
+  }
+
+  .section-content {
+    font-size: 1.25em;
+  }
+}
+
+/*------------------------ MAIN: SECTION: ABOUT --*/
+
+
+/*------------------------ MAIN: SECTION: FLAVORS --*/
+#flavors-list {
+  padding: 0 1%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flavor-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 18em;
+  width: 10em;
+}
+
+.flavor-name {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5em;
+  margin-bottom: 0.5%;
+}
+
+.flavor-img {
+  height: 12em;
+  width: 12em;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flavor-img img {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .flavor-card {
+    height: 16em;
+    width: 8em;
+  }
+
+  .flavor-img {
+    width: 10em;
+    height: 10em;
+  }
+}
+
+/*------------------------ MAIN: SECTION: ART GELATO --*/
+#video {
+  padding-top: 2%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* tablets */
+@media screen and (max-width: 768px) {
+  #video {
+    width: 100%;
+  }
+}
+
+/*-------------------------------------------------- FOOTER --*/
+footer {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3% 0;
+  margin-top: 15%;
+}
+
+footer a,
+footer a:active {
+  color: var(--secondary-color);
+}
+
+footer a:hover {
+  color: white;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-section-heading {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1200px) {
+  footer {
+    align-items: center;
+    padding: 3%;
+  }
+
+  .footer-row {
+    flex-direction: row;
+  }
+
+
+}
+
+@media screen and (max-width: 600px) {
+  .footer-row {
+    flex-direction: column;
+  }
+
+  .footer-column {
+    padding-bottom: 10%;
+  }
+}
+
+/*------------------ FOOTER: VISIT US ----*/
+.social-media {
+  font-size: 1.5em;
+  margin-bottom: 1.5em;
+  color: white;
+}
+
+#copyright {
+  /*   border: 1px solid; */
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+#contact {
+  margin-right: 1.5em;
+  border-right: 2px solid var(--secondary-color);
+}
+
+@media screen and (max-width: 1200px) {
+  #contact {
+    border: none;
+  }
+}
+
+.store-info {
+  padding: 0;
+  display: flex;
+}
+
+.store-info li {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 1.5em;
+}
+
+@media screen and (max-width: 1200px) {
+  .store-info {
+    flex-direction: column;
+  }
+
+  .store-info li {
+    margin: 0;
+    padding-bottom: 4%;
+  }
+}
+
+.store-info i {
+  margin-right: 0.3em;
+}
+
+/*------------------ FOOTER: FOLLOW US ----*/
+#form {
+  display: flex;
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 2%;
+}
+
+
+
+#form input {
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 4%;
+}
+
+#form input:placeholder-shown {
+  font-style: italic;
+}
+
+#form input:focus {
+  outline: none;
+}
+
+#email {
+  font-size: 0.8em;
+  flex-grow: 2;
+}
+
+#submit {
+  color: var(--primary-color);
+  font-size: 12pt;
+}
+
+#submit:hover {
+  cursor: pointer;
+}
+
+#submit:active {
+  color: var(--secondary-color);
+}
