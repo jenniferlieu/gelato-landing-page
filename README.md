@@ -3,7 +3,7 @@
 
 Responsive web design of a product landing page for a fictional Gelato store. Built using pure HTML5 and CSS3. I wanted to brush up on my frontend skills to prepare for my Web App class.
 
-Originally created in Sep 2021 on [codepen](https://codepen.io/jenlieu/full/XWggvBz). Updated and pushed to Github on Sep 2022 for job hunting purposes.
+Originally created on Sep 2021 on [codepen](https://codepen.io/jenlieu/full/XWggvBz). Updated and pushed to Github on Sep 2022 for job hunting purposes.
 
 <p align="center">
   <img src="../assets/screenshot.png" width="40%">
