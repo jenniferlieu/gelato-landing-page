@@ -1,12 +1,15 @@
 # Gelato Landing Page
+[Live Demo](https://jenniferlieu.github.io/gelato-landing-page)
 
-Web design of a product landing page for a fictional Gelato store. I wanted to practice some HTML5/CSS3 and flexbox while brushing up on my frontend skills to prepare myself for my Web Application class.
+Web design of a product landing page for a fictional Gelato store. I wanted to practice some HTML5/CSS3 while brushing up on my frontend skills to prepare myself for my Web Application class. Built using pure HTML5 and CSS3.
 
 Originally created in Sep 2021 on [codepen](https://codepen.io/jenlieu/full/XWggvBz). Updated and pushed to Github on Sep 2022 for job hunting purposes.
 
 Note: I don't want to be sued for copyright infringement, so I used royalty free images. Unfortunately, there are rarely images of specific gelato flavors for free, so I had to get creative on which images to use. Check out the images folder, and you'll see what I mean.
 
-![Full-page length screenshot of the gelato landing page](../assets/screenshot.png)
+<p align="center">
+  <img src="../assets/screenshot.png" width="40%">
+</p>
 
 ## Credits
 - Hero banner photo by <a href="https://unsplash.com/es/@sadswim?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">ian dooley</a> on <a href="https://unsplash.com/photos/TLD6iCOlyb0t">Unsplash</a>
