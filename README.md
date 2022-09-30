@@ -5,13 +5,13 @@ Responsive web design of a product landing page for a fictional Gelato store. Bu
 
 Originally created in Sep 2021 on [codepen](https://codepen.io/jenlieu/full/XWggvBz). Updated and pushed to Github on Sep 2022 for job hunting purposes.
 
-Note: I don't want to be sued for copyright infringement, so I used royalty free images. Unfortunately, there are rarely images of specific gelato flavors for free, so I had to get creative on which images to use. Check out the images folder, and you'll see what I mean.
-
 <p align="center">
   <img src="../assets/screenshot.png" width="40%">
 </p>
 
 ## Credits
+Note: I don't want to be sued for copyright infringement, so I used royalty free images. Unfortunately, there are rarely images of specific gelato flavors for free, so I had to get creative on which images to use. Check out the images folder, and you'll see what I mean.
+
 - Hero banner photo by <a href="https://unsplash.com/es/@sadswim?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">ian dooley</a> on <a href="https://unsplash.com/photos/TLD6iCOlyb0t">Unsplash</a>
 - Stracciatella Photo by <a href="https://unsplash.com/@alexjones?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alex Jones</a> on <a href="https://unsplash.com/photos/VPnvh8vj7lc">Unsplash</a>
 - Nocciola Photo by Markus Spiske on [Pexels](https://www.pexels.com/photo/person-holding-chocolate-ice-cream-cone-126790/)
